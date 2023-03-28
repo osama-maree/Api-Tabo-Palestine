@@ -1,10 +1,10 @@
 const { sequelize } = require("../connection");
-const { DataTypes, DATE } = require("sequelize");
+const { DataTypes } = require("sequelize");
 
 const Land_Fragmentation = sequelize.define("fragmentation", {
   Movement_type: {
     type: DataTypes.STRING,
-    defaultValue: "Land Fragmentation",
+    defaultValue: "حركة بيع",
   },
   Kushan: {
     type: DataTypes.STRING,
@@ -53,4 +53,4 @@ const Land_Fragmentation = sequelize.define("fragmentation", {
     defaultValue: "لا يوجد رسائل لعرضها",
   },
 });
-module.exports=Land_Fragmentation
+module.exports = Land_Fragmentation;
